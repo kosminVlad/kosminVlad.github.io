@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* ! ОБЩИЕ СТИЛИ */
+        .body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ! СТИЛИ ДЛЯ БОЛЬШОГО ЭКРАНА (ДЕСКТОПЫ) */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 960px;
+            /* Старый способ центровки по горизонтали */
+            margin: 0 auto;
+        }
+        .nav {
+            display: flex;
+            list-style: none;
+        }
+        .nav li {
+            margin-right: 10px;
+        }
+        .burger, .burger-nav {
+            display: none;
+        }
+        .logo {
+            font-size: 48px;
+        }
+
+        /* ! СТИЛИ ДЛЯ ПЛАНШЕТА */
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-wrap: wrap;
+            }
+            .logo {
+                font-size: 18px;
+            }
+            .nav {
+                margin-top: 20px;
+                width: 100%;
+                justify-content: center;
+            }
+            .burger, .burger-nav {
+                display: none;
+            }
+        }
+
+        /* ! СТИЛИ ДЛЯ МОБИЛОК */
+        @media only screen and (max-width: 480px) {
+            .logo {
+                font-size: 16px;
+            }
+            .nav {
+                display: none;
+            }
+            .burger-nav {
+                display: none;
+            }
+            .burger {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                background-color: #181818;
+                color: aliceblue;
+                cursor: pointer;
+                font-size: 24px;
+            }
+            .nav--active {
+                display: flex;
+                flex-direction: column;
+                background-color: #181818;
+            }
+
+            .nav--active li {
+                margin: 10px 0px;
+                list-style: none;
+            }
+            .nav--active a {
+                color: #fff;
+            }
+
+        }
+
+
+    </style>
+
+    <title>Пример сайта с адаптивным дизайном</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                Пример сайта с адаптивным дизайном
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="burger">&#9776</div>
+        </div>
+
+        <ul class="burger-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laborum magnam impedit dolor reiciendis autem nihil unde ullam facilis eius. Necessitatibus, illo quam rem minus eveniet perferendis libero exercitationem magnam neque dolore alias enim. Unde consequatur aliquam neque aspernatur eum sit, possimus ab nisi voluptatibus nobis sint ratione vero tenetur.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>2023 Кванториум рулит. IT-Квантум ТОП.</p>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.querySelector(".burger")
+        const nav = document.querySelector(".burger-nav")
+
+        burger.addEventListener("click", () => {
+            nav.classList.toggle("nav--active")
+        })
+
+    </script>
+</body>
+</html>
