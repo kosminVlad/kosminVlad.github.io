@@ -410,6 +410,10 @@ main {
         color: white;
         align-content: flex-start;
     }
+
+    .content {
+        width: 100%;
+    }
     
     .ikonka1 {
         width: 175px;
