@@ -400,7 +400,7 @@ main {
 
     .circle {
         display: flex;
-        background: linear-gradient(45deg, #f3f3f3, #581515);
+        background: linear-gradient(45deg, #080400, #3a0f0f);
         border-radius: 50%;
         height: 330px;
         width: 330px;
