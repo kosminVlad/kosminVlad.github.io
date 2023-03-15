@@ -16,19 +16,6 @@
     box-sizing: border-box;
 }
 
-button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
-
-.none {
-    display: none;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -155,7 +142,8 @@ main {
 
 .katarinaIMG {
     display: flex;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     margin-top: 297px;
     margin-left: 600px;
