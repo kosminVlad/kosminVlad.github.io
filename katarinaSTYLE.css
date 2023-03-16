@@ -21,14 +21,18 @@ a {
     color: white;
 }
 
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
+
 body {
-    background: linear-gradient(45deg, #200909, #0e0c0c);
-    display: flex;
-    flex-direction: column;
-    width: 1900px;
-    /* justify-content: center; */
+        background-color: #181818;
+        display: flex;
+        justify-content: center;
     font-family: "Century Gothic", "Arial", sans-serif;
-    scroll-behavior: smooth;
 }
 
 main {
@@ -119,21 +123,20 @@ main {
 }
 
 .katarina-word {
-    display: flex;
+    display: inline-flexbox;
     position: absolute;
-    margin-top: 225px;
-    margin-left: 764px;
+    /* margin-top: 225px;
+    margin-left: 764px; */
     text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34), 0 0 0.2em rgb(172, 30, 25);
     font-size: 40px;
 }
 
 
-
 .phrase {
     display: flex;
     position: absolute;
-    margin-top: 430px;
-    margin-left: 450px;
+    /* margin-top: 430px;
+    margin-left: 450px; */
     color: #ebbc80;
     justify-content: flex-start;
     font-size: 30px;
@@ -145,8 +148,8 @@ main {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 297px;
-    margin-left: 600px;
+    /* margin-top: 297px;
+    margin-left: 600px; */
     width: 620px;
 }
 
@@ -156,8 +159,8 @@ main {
     height: 550px;
     width: 550px;
     position: absolute;
-    margin-top: 215px;
-    margin-left: 650px;
+    /* margin-top: 215px;
+    margin-left: 650px; */
     z-index: -1;
 }
 
@@ -166,8 +169,8 @@ main {
     position: absolute;
     background-color: rgb(2, 2, 26);
     width: 400px;
-    margin-top: 340px;
-    margin-left: 1225px;
+    /* margin-top: 340px;
+    margin-left: 1225px; */
     max-height: 125px;
     overflow: hidden;
     border: .25px solid #ebbc80;
@@ -210,8 +213,8 @@ main {
     border-bottom: 2px solid white;
     color: white;
     position: absolute;
-    margin-left: 200px;
-    margin-top: 855px;
+    /* margin-left: 200px;
+    margin-top: 855px; */
     font-size: 70px;
     padding: 50px;
     width: 1500px;
@@ -224,9 +227,9 @@ main {
     display: flex;
     position: absolute;
     flex-direction: column;
-    background-color: rgb(2, 2, 26);
+    /* background-color: rgb(2, 2, 26);
     margin-left: 240px;
-    margin-top: 100px;
+    margin-top: 100px; */
     border: 1px solid #c8aa6e;
     padding: 10px;
     border-radius: 5px;
