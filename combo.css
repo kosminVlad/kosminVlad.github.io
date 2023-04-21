@@ -81,6 +81,7 @@ a {
 
 body {
   background: linear-gradient(45deg, #200909, #0e0c0c);
+  background-attachment: fixed;
   font-family: "Century Gothic", "Arial", sans-serif;
   scroll-behavior: smooth;
 }
@@ -167,7 +168,7 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 275px;
+  margin-top: 0px;
 
   border: 0.2px solid #ebbc80;
   border-radius: 15px;
@@ -184,44 +185,46 @@ li {
 
 .skills {
   display: flex;
-  position: absolute;
   text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
     0 0 0.2em rgb(172, 30, 25);
   font-size: 40px;
-  top: 230px;
+  margin-top: 30px;
+  padding: 100px;
 }
 
 .skill {
   width: 75px;
+  border: solid #222222 1px;
 }
 
 .skill-text {
   text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
     0 0 0.2em rgb(172, 30, 25);
   font-size: 40px;
+  padding-bottom: 15px;
 }
 
 .combos {
   display: flex;
-  position: absolute;
   text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
     0 0 0.2em rgb(172, 30, 25);
   font-size: 40px;
-  top: 730px;
+  margin-top: 100px;
 }
 
 .block2 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 300px;
+  margin-top: 100px;
+  flex-direction: column;
+  padding: 20px;
 
   border: 0.2px solid #ebbc80;
   border-radius: 15px;
 
-  height: 224px;
-  padding: 10px;
-  width: 600px;
+  height: 100%;
+  width: 800px;
   background-color: rgb(2, 2, 26);
 
   -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
@@ -229,22 +232,42 @@ li {
   box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
 }
 
-.description-Q {
-  display: none;
-  position: absolute;
-  left: -90px;
-  top: -210px;
+.arrow {
+  padding-top: 40px;
+  margin: 0 0.8rem;
+  width: 1px;
+  height: 1px;
+  -webkit-filter: brightness(0%) invert(57%) sepia(20%) saturate(482%) hue-rotate(192deg) brightness(98%) contrast(89%);
+  filter: brightness(0%) invert(57%) sepia(20%) saturate(482%) hue-rotate(192deg) brightness(98%) contrast(89%);
+}
 
-  font-size: 25px;
+.combo-block {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.description-combo {
+  margin-top: 30px;
   color: #ebbc80;
+}
 
-  background-color: rgb(2, 2, 26);
-  width: 300px;
-  height: 300px;
-  padding: 10px;
+.block3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: column;
+  padding: 20px;
 
   border: 0.2px solid #ebbc80;
   border-radius: 15px;
+
+  height: 100%;
+  width: 800px;
+  background-color: rgb(2, 2, 26);
 
   -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
