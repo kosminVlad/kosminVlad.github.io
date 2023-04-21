@@ -4,8 +4,8 @@
   font-weight: 400;
   /* Браузер сначала попробует найти шрифт локально */
   src: local("Century Gothic"),
-    /* Если не получилось, загрузит woff2 */ url("/fonts/centurygothic.ttf")
-      format("ttf");
+    /* Если не получилось, загрузит woff2 */
+    url("/fonts/centurygothic.ttf") format("ttf");
   /* Если браузер не поддерживает woff2, загрузит woff */
   /* url("/fonts/roboto.woff") format("woff"); */
 }
@@ -88,7 +88,9 @@ body {
 main {
   display: flex;
   margin-top: 150px;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
@@ -212,7 +214,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1000px;
+  margin-top: 300px;
 
   border: 0.2px solid #ebbc80;
   border-radius: 15px;
@@ -226,6 +228,7 @@ li {
   -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
 }
+
 .description-Q {
   display: none;
   position: absolute;
@@ -266,52 +269,52 @@ li {
 }
 
 .W:hover::after {
-    content: "Катарина подбрасывает над собой кинжал, ненадолго увеличивая свою скорость передвижения.";
-    position: absolute;
-    margin-top: -100px;
-    padding: 10px;
-    background-color: rgb(2, 2, 26);
-    border: 0.2px solid #ebbc80;
-    border-radius: 15px;
-    color: #fff;
-    transition: all 0.5s ease-in-out;
-    max-width: 100%;
-    width: 250px;
-    height: 90px;
-    padding: 10px;
-    color: #ebbc80;
-  }
+  content: "Катарина подбрасывает над собой кинжал, ненадолго увеличивая свою скорость передвижения.";
+  position: absolute;
+  margin-top: -100px;
+  padding: 10px;
+  background-color: rgb(2, 2, 26);
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  width: 250px;
+  height: 90px;
+  padding: 10px;
+  color: #ebbc80;
+}
 
-  .E:hover::after {
-    content: "Катарина телепортируется к цели, нанося урон этой цели, если ей окажется враг, или ближайшему врагу.";
-    position: absolute;
-    margin-top: -100px;
-    padding: 10px;
-    background-color: rgb(2, 2, 26);
-    border: 0.2px solid #ebbc80;
-    border-radius: 15px;
-    color: #fff;
-    transition: all 0.5s ease-in-out;
-    max-width: 100%;
-    width: 250px;
-    height: 85px;
-    padding: 10px;
-    color: #ebbc80;
-  }
+.E:hover::after {
+  content: "Катарина телепортируется к цели, нанося урон этой цели, если ей окажется враг, или ближайшему врагу.";
+  position: absolute;
+  margin-top: -100px;
+  padding: 10px;
+  background-color: rgb(2, 2, 26);
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  width: 250px;
+  height: 85px;
+  padding: 10px;
+  color: #ebbc80;
+}
 
-  .R:hover::after {
-    content: "Катарина становится вихрем клинков и наносит огромный магический урон трем ближайшим вражеским чемпионам.";
-    position: absolute;
-    margin-top: -100px;
-    padding: 10px;
-    background-color: rgb(2, 2, 26);
-    border: 0.2px solid #ebbc80;
-    border-radius: 15px;
-    color: #fff;
-    transition: all 0.5s ease-in-out;
-    max-width: 100%;
-    width: 250px;
-    height: 15px;
-    padding: 10px;
-    color: #ebbc80;
-  }
+.R:hover::after {
+  content: "Катарина становится вихрем клинков и наносит огромный магический урон трем ближайшим вражеским чемпионам.";
+  position: absolute;
+  margin-top: -100px;
+  padding: 10px;
+  background-color: rgb(2, 2, 26);
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  width: 250px;
+  height: 105px;
+  padding: 10px;
+  color: #ebbc80;
+}
