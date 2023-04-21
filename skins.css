@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Century Gothic"),
+      /* Если не получилось, загрузит woff2 */ url("/fonts/centurygothic.ttf")
+        format("ttf");
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    /* url("/fonts/roboto.woff") format("woff"); */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  body {
+    background-image: url(images/);
+    font-family: "Century Gothic", "Arial", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+  
+  h1 {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ebbc80;
+    text-align: center;
+  }
