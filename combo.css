@@ -1,272 +1,317 @@
 @font-face {
-    font-family: "Century Gothic";
-    font-style: normal;
-    font-weight: 400;
-    /* Браузер сначала попробует найти шрифт локально */
-    src: local("Century Gothic"),
-        /* Если не получилось, загрузит woff2 */
-        url("/fonts/centurygothic.ttf") format("ttf");
-    /* Если браузер не поддерживает woff2, загрузит woff */
-    /* url("/fonts/roboto.woff") format("woff"); */
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Century Gothic"),
+    /* Если не получилось, загрузит woff2 */ url("/fonts/centurygothic.ttf")
+      format("ttf");
+  /* Если браузер не поддерживает woff2, загрузит woff */
+  /* url("/fonts/roboto.woff") format("woff"); */
 }
 
 /* ? АДАПТИВНАЯ ВЕРСТКА ДЛЯ ПЛАНШЕТОВ И НЕБОЛЬШИХ МОНИТОРОВ */
 @media only screen and (max-width: 960px) {
-    .fixed-menu {
-        width: 90%;
-    }
+  .fixed-menu {
+    width: 90%;
+  }
 
-    li {
-        text-transform: uppercase;
-        font-size: 32px;
-    }
+  li {
+    text-transform: uppercase;
+    font-size: 32px;
+  }
 }
 
 /* ? АДАПТИВНАЯ ВЕРСТКА ДЛЯ СМАРТФОНОВ*/
 @media only screen and (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 180px;
-    }
-
-    li {
-        list-style: none;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        font-size: 32px;
-    }
-
-    .ikonka1 {
-        width: 50%;
-        position: relative;
-    }
-
-    main {
-        margin-top: 60px;
-    }
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.5s ease-in-out;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-button {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
-
-.none {
-    display: none;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-body {
-    background: linear-gradient(45deg, #200909, #0e0c0c);
-    font-family: "Century Gothic", "Arial", sans-serif;
-    scroll-behavior: smooth;
-}
-
-main {
-    display: flex;
-    margin-top: 150px;
-    justify-content: center;
-}
-
-
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
-
-h1 {
-    font-family: "Playfair Display SC", serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #ebbc80;
-    text-align: center;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-header {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.fixed-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 20px;
-
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    border-radius: 10px;
-    background: linear-gradient(45deg, #080400, #661818);
-
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    height: 80px;
-}
-
-ul {
-    margin: 0;
-}
-
-li {
-    list-style: none;
-    margin-right: 25px;
-}
-
-.ikonka1 {
-    width: 20%;
-    position: relative;
-}
-
-.container {
+  nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 180px;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+
+  .ikonka1 {
+    width: 50%;
+    position: relative;
+  }
+
+  main {
+    margin-top: 60px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.none {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: linear-gradient(45deg, #200909, #0e0c0c);
+  font-family: "Century Gothic", "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #ebbc80;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.fixed-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 10px;
+  background: linear-gradient(45deg, #080400, #661818);
+
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 80px;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+.ikonka1 {
+  width: 20%;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .block1 {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    align-items: center;
-    top: 275px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 275px;
 
-    border: 0.2px solid #ebbc80;
-    border-radius: 15px;
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
 
-    height: 224px;
-    padding: 10px;
-    width: 600px;
-    background-color: rgb(2, 2, 26);
+  height: 224px;
+  padding: 10px;
+  width: 600px;
+  background-color: rgb(2, 2, 26);
 
-    -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-
-
+  -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
 }
 
 .skills {
-    display: flex;
-    position: absolute;
-    text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
-        0 0 0.2em rgb(172, 30, 25);
-    font-size: 40px;
-    top: 230px;
+  display: flex;
+  position: absolute;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+    0 0 0.2em rgb(172, 30, 25);
+  font-size: 40px;
+  top: 230px;
 }
 
 .skill {
-    width: 75px;
+  width: 75px;
 }
 
 .skill-text {
-    text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
-        0 0 0.2em rgb(172, 30, 25);
-    font-size: 40px;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+    0 0 0.2em rgb(172, 30, 25);
+  font-size: 40px;
 }
 
 .combos {
-    display: flex;
-    position: absolute;
-    text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
-        0 0 0.2em rgb(172, 30, 25);
-    font-size: 40px;
-    top: 730px;
+  display: flex;
+  position: absolute;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+    0 0 0.2em rgb(172, 30, 25);
+  font-size: 40px;
+  top: 730px;
 }
 
 .block2 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    top: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1000px;
 
-    border: 0.2px solid #ebbc80;
-    border-radius: 15px;
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
 
-    height: 224px;
-    padding: 10px;
-    width: 600px;
-    background-color: rgb(2, 2, 26);
+  height: 224px;
+  padding: 10px;
+  width: 600px;
+  background-color: rgb(2, 2, 26);
 
-    -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-
+  -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
 }
-.description-Q{
-    display: none;
+.description-Q {
+  display: none;
+  position: absolute;
+  left: -90px;
+  top: -210px;
+
+  font-size: 25px;
+  color: #ebbc80;
+
+  background-color: rgb(2, 2, 26);
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+
+  -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+}
+
+.Q:hover::after {
+  content: "Катарина мечет во врага кинжал, который рикошетом поражает еще несколько целей, после чего падает на землю.";
+  position: absolute;
+  margin-top: -100px;
+  padding: 10px;
+  background-color: rgb(2, 2, 26);
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  width: 250px;
+  height: 105px;
+  padding: 10px;
+  color: #ebbc80;
+}
+
+.W:hover::after {
+    content: "Катарина подбрасывает над собой кинжал, ненадолго увеличивая свою скорость передвижения.";
     position: absolute;
-    left: -90px;
-    top: -210px;
-
-    font-size: 25px;
-    color: #ebbc80;
-    
-    background-color: rgb(2, 2, 26);
-    width: 300px;
-    height: 300px;
+    margin-top: -100px;
     padding: 10px;
-
+    background-color: rgb(2, 2, 26);
     border: 0.2px solid #ebbc80;
     border-radius: 15px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    max-width: 100%;
+    width: 250px;
+    height: 90px;
+    padding: 10px;
+    color: #ebbc80;
+  }
 
-    -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
-}
+  .E:hover::after {
+    content: "Катарина телепортируется к цели, нанося урон этой цели, если ей окажется враг, или ближайшему врагу.";
+    position: absolute;
+    margin-top: -100px;
+    padding: 10px;
+    background-color: rgb(2, 2, 26);
+    border: 0.2px solid #ebbc80;
+    border-radius: 15px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    max-width: 100%;
+    width: 250px;
+    height: 85px;
+    padding: 10px;
+    color: #ebbc80;
+  }
 
-.Q:hover + .description-Q {
-    display: flex;
-}
-
-.description-W{
-
-}
-
-.description-E{
-
-}
-
-.description-R{
-
-}
+  .R:hover::after {
+    content: "Катарина становится вихрем клинков и наносит огромный магический урон трем ближайшим вражеским чемпионам.";
+    position: absolute;
+    margin-top: -100px;
+    padding: 10px;
+    background-color: rgb(2, 2, 26);
+    border: 0.2px solid #ebbc80;
+    border-radius: 15px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    max-width: 100%;
+    width: 250px;
+    height: 15px;
+    padding: 10px;
+    color: #ebbc80;
+  }
