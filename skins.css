@@ -4,48 +4,71 @@
     font-weight: 400;
     /* Браузер сначала попробует найти шрифт локально */
     src: local("Century Gothic"),
-      /* Если не получилось, загрузит woff2 */ url("/fonts/centurygothic.ttf")
-        format("ttf");
+        /* Если не получилось, загрузит woff2 */
+        url("/fonts/centurygothic.ttf") format("ttf");
     /* Если браузер не поддерживает woff2, загрузит woff */
     /* url("/fonts/roboto.woff") format("woff"); */
-  }
-  
-  * {
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  button {
+    transition: all 0.5s ease-in-out;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+button {
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-  }
-  
-  .none {
+}
+
+.none {
     display: none;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: white;
-  }
-  
-  body {
-    background-image: url(images/);
+}
+
+body {
+    background-image: url(images/knife.jpg);
+    background-attachment: fixed;
     font-family: "Century Gothic", "Arial", sans-serif;
     scroll-behavior: smooth;
-  }
-  
-  @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
-  
-  h1 {
+    z-index: 0;
+
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    background: linear-gradient(45deg, #200909, #0e0c0c);
+    background-attachment: fixed;
+    width: 80%;
+    height: 1000px;
+    z-index: 1;
+    margin-left: 10%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+
+h1 {
     font-family: "Playfair Display SC", serif;
     font-weight: 500;
     letter-spacing: 1px;
     color: #ebbc80;
     text-align: center;
-  }
+}
