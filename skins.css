@@ -49,13 +49,13 @@ body {
   scroll-behavior: smooth;
 }
 
-main {
+/* main {
   display: flex;
   margin-top: 150px;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
 
@@ -127,6 +127,14 @@ li {
   align-items: center;
 }
 
+.main-content {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
 .gallery {
   display: flex;
   margin-top: 100px;
@@ -172,6 +180,32 @@ li {
   li {
     text-transform: uppercase;
     font-size: 32px;
+  }
+
+  main {
+    align-items: center;
+  }
+
+  .skin-block {
+    width: 65%;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .image-skin {
+    width: 100%;
+    border: #fff 2px solid;
+  }
+
+  .h1 {
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+      0 0 0.2em rgb(172, 30, 25);
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+
+  .gallery {
+    width: 80%;
   }
 }
 
@@ -221,5 +255,29 @@ li {
 
   .gallery {
     width: 700px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  
+  .skin-block {
+    width: 350px;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .image-skin {
+    width: 350px;
+    border: #fff 2px solid;
+  }
+
+  .h1 {
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+      0 0 0.2em rgb(172, 30, 25);
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+
+  .gallery {
+    width: 425px;
   }
 }
