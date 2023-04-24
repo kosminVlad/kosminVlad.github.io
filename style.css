@@ -319,7 +319,6 @@
     .katarinaIMG {
       position: fixed;
       width: 80%;
-      /* padding-top: 700px; */
       top: 370px;
       left: 150px;
       z-index: 1001;
