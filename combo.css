@@ -375,6 +375,10 @@ li {
     width: 100%;
   }
 
+  .skills {
+    width: 100%;
+  }
+
   .skill {
     width: 100%;
   }
@@ -416,5 +420,17 @@ li {
 
   .skill-text {
     font-size: 200%;
+  }
+
+  .block1 {
+    width: 70%;
+  }
+
+  .block2 {
+    width: 80%;
+  }
+
+  .block3 {
+    width: 80%;
   }
 }
