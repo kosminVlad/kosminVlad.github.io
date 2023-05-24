@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Century Gothic"),
+      /* Если не получилось, загрузит woff2 */
+      url("/fonts/centurygothic.ttf") format("ttf");
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    /* url("/fonts/roboto.woff") format("woff"); */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  body {
+    background: linear-gradient(45deg, #200909, #0e0c0c);
+    background-attachment: fixed;
+    font-family: "Century Gothic", "Arial", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  main {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+  
+  h1 {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ebbc80;
+    text-align: center;
+  }
+
+
+  .Quiz {
+    display: flex;
+    margin-top: 0px;
+  
+    border: 0.2px solid #ebbc80;
+    border-radius: 15px;
+  
+    height: 524px;
+    padding: 10px;
+    width: 600px;
+    background-color: rgb(2, 2, 26);
+
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+
+  .question-text {
+    color: #ebbc80 ;
+    font-size: 30px;
+  }
