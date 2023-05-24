@@ -73,21 +73,59 @@
     border: 0.2px solid #ebbc80;
     border-radius: 15px;
   
-    height: 524px;
-    padding: 10px;
-    width: 600px;
+    height: 1024px;
+    padding: px;
+    width: 1000px;
     background-color: rgb(2, 2, 26);
 
-    flex-direction: row;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
   }
 
+  .Question-block {
+    width: 100px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin: ;
+  }
 
+  .Answer {
+
+    color: #ebbc80;
+    padding: 10px;
+    left: 1000px;
+  }
+
+  .Answers {
+    display: flex;
+  }
 
 
   .question-text {
     color: #ebbc80 ;
     font-size: 30px;
+  }
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+  }
+  
+  input:checked {
+    border: 6px solid rgb(255, 255, 255);
   }
