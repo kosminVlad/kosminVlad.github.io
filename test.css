@@ -73,23 +73,24 @@
     border: 0.2px solid #ebbc80;
     border-radius: 15px;
   
-    height: 1024px;
+    height: 1324px;
     padding: px;
     width: 1000px;
     background-color: rgb(2, 2, 26);
-
-    justify-content: space-around;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
 
   .Question-block {
-    width: 100px;
-      justify-content: center;
       display: flex;
       flex-direction: column;
-      margin: ;
-  }
+      width: 400px;
+      border: 1px solid #ebbc80;
+      border-radius: 15px;
+      padding: 10px;
+      background-color: #040125;
+    }
 
   .Answer {
 
@@ -99,7 +100,7 @@
   }
 
   .Answers {
-    display: flex;
+
   }
 
 
