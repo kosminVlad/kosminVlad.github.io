@@ -63,6 +63,7 @@
     letter-spacing: 1px;
     color: #ebbc80;
     text-align: center;
+    font-size: 60px;
   }
 
   .container {
@@ -135,23 +136,31 @@
     border: 0.2px solid #ebbc80;
     border-radius: 15px;
   
-    height: 1324px;
+    height: 1524px;
     padding: px;
     width: 1000px;
     background-color: rgb(2, 2, 26);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  } 
+
+  .katarina-test {
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+    0 0 0.2em rgb(172, 30, 25);
   }
 
   .Question-block {
       display: flex;
       flex-direction: column;
-      width: 400px;
+      width: 450px;
       border: 1px solid #ebbc80;
       border-radius: 15px;
       padding: 10px;
       background-color: #040125;
+      -webkit-box-shadow: 0px 4px 8px 14px rgba(11, 11, 11, 0.31);
+      -moz-box-shadow: 0px 4px 8px 14px rgba(11, 11, 11, 0.31);
+      box-shadow: 0px 4px 8px 14px rgba(11, 11, 11, 0.31);
     }
 
   .Answer {
@@ -191,4 +200,16 @@
   
   input:checked {
     border: 6px solid rgb(255, 255, 255);
+  }
+
+  .resultat-text {
+    color: #ebbc80 ;
+    font-size: 30px;
+    border: 2px solid #ebbc80;
+    border-radius: 20px;
+    padding: 12px;
+    background-color: #050101;
+    -webkit-box-shadow: 0px 4px 8px 14px rgba(11, 11, 11, 0.31);
+    -moz-box-shadow: 0px 4px 8px 14px rgba(11, 11, 11, 0.31);
+    box-shadow: 0px 4px 8px 14px rgba(11, 11, 11, 0.31);
   }

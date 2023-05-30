@@ -18,7 +18,7 @@ function n() {
         } else if (sum == 3) {
             res.innerHTML = `Ваш результат: ${sum} <br> больше половины, молодец`
         } else if (sum == 4) {
-            res.innerHTML = `Ваш результат: ${sum} <br> ЛЕГЕНДА!!!!!`
+            res.innerHTML = `Ваш результат: ${sum} <br> Всё правильно!!`
         }
         
     } 
