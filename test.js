@@ -8,6 +8,8 @@ function n() {
         sum = 0 
         for( i = 0; i < correct.length; i++) {  
         if(input[i] == correct[i]){ 
+            console.log(i)
+            console.log(correct.length)
             sum += 1 
         }  if (sum == 0) {
             res.innerHTML = `Ваш результат: ${sum} <br> нет слов...`;
