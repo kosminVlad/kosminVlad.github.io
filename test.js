@@ -1,5 +1,5 @@
 let correct = [1, 3, 2, 1] 
-let input = [] 
+let input = [0, 0, 0, 0] 
 let sum = 0 
 function tap(x, y) { 
         input.splice(x , 1 , y) 
