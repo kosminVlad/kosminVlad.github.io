@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KOSMIN</title>
+</head>
+
+<body>
+    <menu>
+        <div class="menu-content">
+            <div class="logo">
+                <a href="index.html">
+                    <h1 id="logo">KOSMIN</h1>
+                </a>
+            </div>
+            <div class="list">
+                <ul class="menu__list">
+                    <li class="menu__list-li" onclick="projectsOn()">PROJECTS</li>
+                    <li class="menu__list-li" onclick="nothingOn()"> GAMES </li>
+                    <li class="menu__list-li" onclick="musicOn()"> MUSIC </li>
+                    <li class="menu__list-li" onclick="clipsOn()">CLIPS</li>
+                </ul>
+                <ul class="menu__urls">
+                   <a href="https://vk.com/kosminvlad"> <li class="menu__urls-url"><img class="menu__urls-img" src='images/VK Logo White.png' onmouseover="this.src='images/VK Logo pink.png';" onmouseout="this.src='images/VK Logo White.png'" alt=""></li></a>
+                   <a href="https://t.me/kosmin0"> <li class="menu__urls-url" id="telegram"><img class="menu__urls-img" src='images/telegram-xxl.png' onmouseover="this.src='images/telegram-xxl-pink.png';" onmouseout="this.src='images/telegram-xxl.png'" alt=""></li></a>
+                   <li class="menu__urls-url" id="discord"><img class="menu__urls-img" style="max-width: 45px;" src='images/discord-mark-white.png' onmouseover="this.src='images/discord-mark-pink.png';" onmouseout="this.src='images/discord-mark-white.png';" /></li>
+                   <a href="https://github.com/kosminVlad"> <li class="menu__urls-url"><img class="menu__urls-img" src="images/github-mark-white.png"  onmouseover="this.src='images/github-mark-pink.png';" onmouseout="this.src='images/github-mark-white.png';" alt=""></li></a>
+                </ul>
+            </div>
+        </div>
+    </menu>
+    <main>
+        <div class="main-content">
+            <div class="projects__content none">
+                
+                <div class="projects__content_block">  
+                <a href=""><img class="projects__content_block_img" src="images/VBlC-PXM8rs.jpg" alt=""></a>
+                <a href=""> <p> My Page old version </p> </a>
+                </div>
+                
+                <div class="projects__content_block"> 
+                   <a href=""> <img class="projects__content_block_img" src="images/2023-11-04_14-27-58.png" alt=""></a>
+                   <a href=""> <p> Katarina's page </p></a>
+                </div>            
+                
+                <div class="projects__content_block">  
+                    <a href=""><img class="projects__content_block_img" src="images/2023-11-04_14-30-28.png" alt=""></a>
+                    <p> Lomonosov's page </p>
+                </div>
+            </div>
+
+            <div class="nothing__content none">
+                <h1>There's nothing here</h1>
+            </div>
+
+            <div class="music__content none">
+
+            </div>
+
+            <div class="clips__content none">
+            
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

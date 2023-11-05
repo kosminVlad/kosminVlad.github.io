@@ -1,0 +1,150 @@
+[
+    {
+        "id": 1,
+        "image": "music/ANGELMAYCRY.jpeg",
+        "author": "Kai Angel",
+        "title": "ANGEL MAY CRY",
+        "url": "https://music.yandex.ru/album/26519993"
+    },
+    {
+        "id": 2,
+        "image": "music/MARILYNMANSON.jpeg",
+        "author": "Kai Angel",
+        "title": "MARILYN MANSON",
+        "url": "https://music.yandex.ru/album/25270700"
+    },
+    {
+        "id": 3,
+        "image": "music/KaiCore.jpeg",
+        "author": "Kai Angel",
+        "title": "kAiCoRe",
+        "url": "https://music.yandex.ru/album/22867411"
+    },
+    {
+        "id": 4,
+        "image": "music/ASPHALT.jpeg",
+        "author": "9mice",
+        "title": "ASPHALT",
+        "url": "https://music.yandex.ru/album/25926224"
+    },
+    {
+        "id": 5,
+        "image": "music/HEAVYMETAL.jpeg",
+        "author": "Kai Angel & 9mice",
+        "title": "HEAVY METAL",
+        "url": "https://music.yandex.ru/album/25270700"
+    },
+    {
+        "id": 6,
+        "image": "music/gotika.jpeg",
+        "author": "zavet",
+        "title": "gotika",
+        "url": "https://music.yandex.ru/album/18865113"
+    },
+    {
+        "id": 7,
+        "image": "music/AA2.jpeg",
+        "author": "Aarne",
+        "title": "AA LANGUAGE 2",
+        "url": "https://music.yandex.ru/album/27928024"
+    },
+    {
+        "id": 8,
+        "image": "music/ANDERFULELF.jpeg",
+        "author": "Маленький Ярче",
+        "title": "ANDERFUL ELF",
+        "url": "https://music.yandex.ru/album/28003812"
+    },    
+    {
+        "id": 9,
+        "image": "music/sayonarabol.jpeg",
+        "author": "Элджей",
+        "title": "Sayonara bоль",
+        "url": "https://music.yandex.ru/album/25381169"
+    },
+    {
+        "id": 10,
+        "image": "music/MILLIONDOLLARDEPRESSION.jpeg",
+        "author": "PHARAOH",
+        "title": "Million Dollar Depression",
+        "url": "https://music.yandex.ru/album/14427354"
+    },
+    {
+        "id": 11,
+        "image": "music/PHUNERAL.jpeg",
+        "author": "PHARAOH",
+        "title": "PHUNERAL",
+        "url": "https://music.yandex.ru/album/5675354"
+    },
+    {
+        "id": 12,
+        "image": "music/ComeOverWhenYou.png",
+        "author": "Lil Peep",
+        "title": "Come Over When You Sober Pt.1 ",
+        "url": "https://music.yandex.ru/album/27928024"
+    },
+    {
+        "id": 13,
+        "image": "music/BROKENSEASON.jpeg",
+        "author": "ANIKV",
+        "title": "BROKEN SEASON",
+        "url": "https://music.yandex.ru/album/25458636"
+    },
+    {
+        "id": 14,
+        "image": "music/BIGFOOT.jpeg",
+        "author": "SIDODGI DUBOSHIT",
+        "title": "BIGFOOT ",
+        "url": "https://music.yandex.ru/album/17442733"
+    },
+    {
+        "id": 15,
+        "image": "music/BURNINGMAN.jpeg",
+        "author": "SIDODGI DUBOSHIT",
+        "title": "BURNING MAN",
+        "url": "https://music.yandex.ru/album/26803733"
+    },
+    {
+        "id": 16,
+        "image": "music/NCM.jpeg",
+        "author": "Heronwater",
+        "title": "NO COMMERCIAL LYRICS ",
+        "url": "https://music.yandex.ru/album/24203702"
+    },
+    {
+        "id": 17,
+        "image": "music/PILLPARTY.jpeg",
+        "author": "FENDIGLOCK",
+        "title": "PILL PARTY ",
+        "url": "https://music.yandex.ru/album/27928024"
+    },
+    {
+        "id": 18,
+        "image": "music/TRENDSETTER.jpeg",
+        "author": "FENDIGLOCK",
+        "title": "TRENDSETTER ",
+        "url": "https://music.yandex.ru/album/27545639"
+    },
+    {
+        "id": 19,
+        "image": "music/TESTDRIVE.jpeg",
+        "author": "LILDRUGHILL",
+        "title": "test drive: archive",
+        "url": "https://music.yandex.ru/album/27652126"
+    },
+    {
+        "id": 20,
+        "image": "music/glow.jpeg",
+        "author": "LILDRUGHILL",
+        "title": "glow",
+        "url": "https://music.yandex.ru/album/17437704"
+    },
+    {
+        "id": 21,
+        "image": "music/AllBabiesFly.jpeg",
+        "author": "LILDRUGHILL",
+        "title": "All Babies Fly",
+        "url": "https://music.yandex.ru/album/13619041"
+    }
+
+]
