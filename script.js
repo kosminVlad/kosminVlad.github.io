@@ -13,12 +13,11 @@ document.getElementById("discord").addEventListener("click", function () {
 
     alert("Текст скопирован в буфер обмена!");
 });
-    
-    let projects = document.querySelector('.projects__content') 
-    let nothing = document.querySelector('.nothing__content')
-    let music = document.querySelector('.music__content')
-    let clips = document.querySelector('.clips__content')
-    let logo = document.querySelector('#logo')
+    function logoClick(){
+        document.querySelector("#logo").addEventListener('click', () => {
+            
+        }) 
+    }
 
     function projectsOn() {
         let projects = document.querySelector('.projects__content') 
@@ -26,7 +25,7 @@ document.getElementById("discord").addEventListener("click", function () {
         let music = document.querySelector('.music__content')
         let clips = document.querySelector('.clips__content')
         let logo = document.querySelector('#logo')
-    logo.style.fontSize = "40px"
+    logo.style.fontSize = "2vw"
     projects.classList.remove('none')
     nothing.classList.add('none')
     music.classList.add('none')
@@ -39,7 +38,7 @@ document.getElementById("discord").addEventListener("click", function () {
         let music = document.querySelector('.music__content')
         let clips = document.querySelector('.clips__content')
         let logo = document.querySelector('#logo')
-        logo.style.fontSize = "40px"
+        logo.style.fontSize = "2vw"
         projects.classList.add('none')
         nothing.classList.remove('none')
         music.classList.add('none')
@@ -52,7 +51,7 @@ document.getElementById("discord").addEventListener("click", function () {
         let music = document.querySelector('.music__content')
         let clips = document.querySelector('.clips__content')
         let logo = document.querySelector('#logo')
-        logo.style.fontSize = "40px"
+        logo.style.fontSize = "2vw"
         projects.classList.add('none')
         nothing.classList.add('none')
         music.classList.remove('none')
@@ -65,7 +64,7 @@ document.getElementById("discord").addEventListener("click", function () {
         let music = document.querySelector('.music__content')
         let clips = document.querySelector('.clips__content')
         let logo = document.querySelector('#logo')
-        logo.style.fontSize = "40px"
+        logo.style.fontSize = "2vw"
         projects.classList.add('none')
         nothing.classList.add('none')
         music.classList.add('none')

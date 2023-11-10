@@ -61,6 +61,7 @@ menu {
     font-family: 'drukwide', sans-serif;
     margin: 30px 0px 0px 30px;
     transition: .1s;
+    cursor: pointer;
 }
 
 .logo h1:hover {
@@ -70,6 +71,10 @@ menu {
 
 .list {
     margin: 0 0 30px 30px;
+}
+
+.menu__list-url:hover {
+    color: #d87093;
 }
 
 .menu__list {

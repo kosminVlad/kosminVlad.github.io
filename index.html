@@ -11,23 +11,39 @@
 <body>
     <menu>
         <div class="menu-content">
-            <div class="logo">
-                <a href="index.html">
-                    <h1 id="logo">KOSMIN</h1>
-                </a>
+            <div class="logo" onclick="logoClick()">
+                <h1 id="logo">KOSMIN</h1>
             </div>
             <div class="list">
                 <ul class="menu__list">
-                    <li class="menu__list-li" onclick="projectsOn()"> <a href="#main-content"> PROJECTS </a> </li>
-                    <li class="menu__list-li" onclick="nothingOn()"> <a href="#main-content">GAMES </a></li>
-                    <li class="menu__list-li" onclick="musicOn()"> <a href="#main-content"> MUSIC </a></li>
-                    <li class="menu__list-li" onclick="clipsOn()"><a href="#main-content"> CLIPS </a> </li>
+                    <li class="menu__list-li" onclick="projectsOn()"> <a href="#main-content" class="menu__list-url">
+                            PROJECTS </a> </li>
+                    <li class="menu__list-li" onclick="nothingOn()"> <a href="#main-content"
+                            class="menu__list-url">GAMES </a></li>
+                    <li class="menu__list-li" onclick="musicOn()"> <a href="#main-content" class="menu__list-url"> MUSIC
+                        </a></li>
+                    <li class="menu__list-li" onclick="clipsOn()"><a href="#main-content" class="menu__list-url"> CLIPS
+                        </a> </li>
                 </ul>
                 <ul class="menu__urls">
-                   <a href="https://vk.com/kosminvlad"> <li class="menu__urls-url"><img class="menu__urls-img" src='images/VK Logo White.png' onmouseover="this.src='images/VK Logo pink.png';" onmouseout="this.src='images/VK Logo White.png'" alt=""></li></a>
-                   <a href="https://t.me/kosmin0"> <li class="menu__urls-url" id="telegram"><img class="menu__urls-img" src='images/telegram-xxl.png' onmouseover="this.src='images/telegram-xxl-pink.png';" onmouseout="this.src='images/telegram-xxl.png'" alt=""></li></a>
-                   <li class="menu__urls-url" id="discord"><img class="menu__urls-img" style="max-width: 45px;" src='images/discord-mark-white.png' onmouseover="this.src='images/discord-mark-pink.png';" onmouseout="this.src='images/discord-mark-white.png';" /></li>
-                   <a href="https://github.com/kosminVlad"> <li class="menu__urls-url"><img class="menu__urls-img" src="images/github-mark-white.png"  onmouseover="this.src='images/github-mark-pink.png';" onmouseout="this.src='images/github-mark-white.png';" alt=""></li></a>
+                    <a href="https://vk.com/kosminvlad">
+                        <li class="menu__urls-url"><img class="menu__urls-img" src='images/VK Logo White.png'
+                                onmouseover="this.src='images/VK Logo pink.png';"
+                                onmouseout="this.src='images/VK Logo White.png'" alt=""></li>
+                    </a>
+                    <a href="https://t.me/kosmin0">
+                        <li class="menu__urls-url" id="telegram"><img class="menu__urls-img"
+                                src='images/telegram-xxl.png' onmouseover="this.src='images/telegram-xxl-pink.png';"
+                                onmouseout="this.src='images/telegram-xxl.png'" alt=""></li>
+                    </a>
+                    <li class="menu__urls-url" id="discord"><img class="menu__urls-img" style="max-width: 45px;"
+                            src='images/discord-mark-white.png' onmouseover="this.src='images/discord-mark-pink.png';"
+                            onmouseout="this.src='images/discord-mark-white.png';" /></li>
+                    <a href="https://github.com/kosminVlad">
+                        <li class="menu__urls-url"><img class="menu__urls-img" src="images/github-mark-white.png"
+                                onmouseover="this.src='images/github-mark-pink.png';"
+                                onmouseout="this.src='images/github-mark-white.png';" alt=""></li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -35,18 +51,23 @@
     <main>
         <div class="main-content" id="main-content">
             <div class="projects__content none" id="projects">
-                
-                <div class="projects__content_block">  
-                <a href=""><img class="projects__content_block_img" src="images/VBlC-PXM8rs.jpg" alt=""></a>
-                <a href=""> <p> My Page old version </p> </a>
+
+                <div class="projects__content_block">
+                    <a href=""><img class="projects__content_block_img" src="images/VBlC-PXM8rs.jpg" alt=""></a>
+                    <a href="">
+                        <p> My Page old version </p>
+                    </a>
                 </div>
-                
-                <div class="projects__content_block"> 
-                   <a href=""> <img class="projects__content_block_img" src="images/2023-11-04_14-27-58.png" alt=""></a>
-                   <a href=""> <p> Katarina's page </p></a>
-                </div>            
-                
-                <div class="projects__content_block">  
+
+                <div class="projects__content_block">
+                    <a href=""> <img class="projects__content_block_img" src="images/2023-11-04_14-27-58.png"
+                            alt=""></a>
+                    <a href="">
+                        <p> Katarina's page </p>
+                    </a>
+                </div>
+
+                <div class="projects__content_block">
                     <a href=""><img class="projects__content_block_img" src="images/2023-11-04_14-30-28.png" alt=""></a>
                     <p> Lomonosov's page </p>
                 </div>
@@ -57,30 +78,14 @@
             </div>
 
             <div class="music__content none" id="music">
-                <div class="last_best__album"> 
-                    
-                    <h1 class="best_album_h1"> The best last album</h1>
-
-                    <div class="best__album"> 
-                        
-                        <a href="https://music.yandex.ru/album/28122625"> 
-                            <img class="music__content_img" src="music/SHIK2.jpeg" alt="">
-                            <h1 class="music__content_h1"> СХИК2 </h1> 
-                        </a>
-                            <p class="music__content_p"> Кишлак </p>
-                    
-                    </div>
-
-                </div>
-
                 <div class="music__content_blocks">
 
                 </div>
-            
-        </div>
+
+            </div>
 
             <div class="clips__content none" id="clips">
-            
+
             </div>
         </div>
     </main>
