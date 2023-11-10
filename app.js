@@ -1,7 +1,7 @@
 fetch('data.json')
     .then(response => response.json())
     .then(albums => {
-        const musicContent = document.querySelector('.music__content')
+        const musicContent = document.querySelector('.music__content_blocks')
 
         albums.forEach(elem => {
             const album = `                
