@@ -18,10 +18,10 @@
             </div>
             <div class="list">
                 <ul class="menu__list">
-                    <li class="menu__list-li" onclick="projectsOn()">PROJECTS</li>
-                    <li class="menu__list-li" onclick="nothingOn()"> GAMES </li>
-                    <li class="menu__list-li" onclick="musicOn()"> MUSIC </li>
-                    <li class="menu__list-li" onclick="clipsOn()">CLIPS</li>
+                    <li class="menu__list-li" onclick="projectsOn()"> <a href="#main-content"> PROJECTS </a> </li>
+                    <li class="menu__list-li" onclick="nothingOn()"> <a href="#main-content">GAMES </a></li>
+                    <li class="menu__list-li" onclick="musicOn()"> <a href="#main-content"> MUSIC </a></li>
+                    <li class="menu__list-li" onclick="clipsOn()"><a href="#main-content"> CLIPS </a> </li>
                 </ul>
                 <ul class="menu__urls">
                    <a href="https://vk.com/kosminvlad"> <li class="menu__urls-url"><img class="menu__urls-img" src='images/VK Logo White.png' onmouseover="this.src='images/VK Logo pink.png';" onmouseout="this.src='images/VK Logo White.png'" alt=""></li></a>
@@ -33,8 +33,8 @@
         </div>
     </menu>
     <main>
-        <div class="main-content">
-            <div class="projects__content none">
+        <div class="main-content" id="main-content">
+            <div class="projects__content none" id="projects">
                 
                 <div class="projects__content_block">  
                 <a href=""><img class="projects__content_block_img" src="images/VBlC-PXM8rs.jpg" alt=""></a>
@@ -52,15 +52,15 @@
                 </div>
             </div>
 
-            <div class="nothing__content none">
+            <div class="nothing__content none" id="games">
                 <h1>There's nothing here</h1>
             </div>
 
-            <div class="music__content none">
+            <div class="music__content none" id="music">
 
             </div>
 
-            <div class="clips__content none">
+            <div class="clips__content none" id="clips">
             
             </div>
         </div>
