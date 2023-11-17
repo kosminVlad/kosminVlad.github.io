@@ -15,6 +15,11 @@
 }
 
 
+@font-face {
+    font-family: 'ver';
+    src: url(fonts/mr_hanginglettersg.otf);
+}
+
 a {
     color: white;
 }
@@ -56,6 +61,7 @@ menu {
     font-family: 'drukwide', sans-serif;
     margin: 30px 0px 0px 30px;
     transition: .1s;
+    cursor: pointer;
 }
 
 .logo h1:hover {
@@ -65,6 +71,10 @@ menu {
 
 .list {
     margin: 0 0 30px 30px;
+}
+
+.menu__list-url:hover {
+    color: #d87093;
 }
 
 .menu__list {
@@ -151,7 +161,7 @@ main {
     align-items: center;
     height: 100%;
     flex-wrap: wrap;
-    margin-top: 250px ;
+    margin-top: 50px ;
     gap: 50px;
 }
 
@@ -191,6 +201,16 @@ main {
 .music__content {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.music__content_blocks {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     flex-wrap: wrap;
@@ -202,6 +222,31 @@ main {
     height: 17vw;
     margin: 3%;
 }
+
+.best_album_h1 {
+    font-size: 5vw;
+    color: #d87093;
+}
+
+.last_best__album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+    color: white;
+}
+
+.best__album {
+    width: 17.5vw;
+    height: 17vw;
+
+    -webkit-box-shadow: 0px 0px 86px -28px rgba(217, 0, 255, 1);
+    -moz-box-shadow: 0px 0px 86px -28px rgba(217, 0, 255, 1);
+    box-shadow: 0px 0px 86px -28px rgba(217, 0, 255, 1);
+}
+
+
 
 .music__content_img {
     width: 100%;
