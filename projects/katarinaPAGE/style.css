@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "Century Gothic";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Century Gothic"),
+      /* Если не получилось, загрузит woff2 */ url("/fonts/centurygothic.ttf")
+        format("ttf");
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    /* url("/fonts/roboto.woff") format("woff"); */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  body {
+    background: linear-gradient(45deg, #200909, #0e0c0c);
+    font-family: "Century Gothic", "Arial", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+  
+  h1 {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ebbc80;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  header {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  .fixed-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-top: 20px;
+  
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    border-radius: 10px;
+    background: linear-gradient(45deg, #080400, #661818);
+
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 80px;
+  }
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    margin-right: 25px;
+    font-size: 20px;
+  }
+  .ikonka1 {
+    width: 20%;
+    position: relative;
+  }
+  main {
+    margin-top: 150px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .katarina-word {
+    text-align: center;
+    position: relative;
+  }
+  
+  .card-person {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ktogdekogda,
+  .katarina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .katarina {
+    position: relative;
+  }
+  
+  .katarinaIMG {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .circle {
+    background: linear-gradient(45deg, #080400, #3a0f0f);
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+  
+    position: absolute;
+  
+    z-index: -1;
+  }
+  
+  .start,
+  .YT-VIDEOS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .start {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: white;
+  
+    font-size: 70px;
+    padding: 50px;
+  
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .gg {
+    text-align: center;
+  }
+  
+  .na4ni {
+    font-weight: bold;
+  }
+  
+  .yt-video-1,
+  .yt-video-2 {
+    text-align: center;
+  }
+  
+  .yt1,
+  .yt2 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+  
+    border: 0.2px solid #ebbc80;
+    padding: 60px;
+    background-color: rgb(2, 2, 26);
+  }
+  
+  .katarina-word {
+    display: flex;
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+      0 0 0.2em rgb(172, 30, 25);
+    font-size: 40px;
+  }
+  
+  .phrase {
+    display: flex;
+    position: relative;
+    left: 100px;
+    color: #ebbc80;
+    justify-content: flex-start;
+    font-size: 35px;
+    font-style: oblique;
+  }
+  
+  .opisanie {
+    color: #c8aa6e;
+    background-color: rgb(2, 2, 26);
+    width: 400px;
+    max-height: 125px;
+    position: absolute;
+    top: 400px;
+    right: 290px;
+    overflow: hidden;
+  
+    border: 0.25px solid #ebbc80;
+    padding: 12px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+  }
+  /* ! */
+  .opisanie:hover {
+    max-height: 500px;
+    padding: 22px;
+    transition-duration: 0.5s;
+  }
+  
+  .opisanie:hover::after {
+    transition-duration: 0.5s;
+    max-height: 65px;
+    overflow: hidden;
+  }
+  /* ! */
+  
+  .ktogdekogda {
+    color: #c8aa6e;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(2, 2, 26);
+    top: 250px;
+    left: 350px;
+  
+    border: 1px solid #c8aa6e;
+    padding: 10px;
+    border-radius: 5px;
+  
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+  
+    z-index: 999;
+  }
+  
+  .ktogdekogda:hover {
+    transform: scale(1.2);
+  }
+  
+  /* ? АДАПТИВНАЯ ВЕРСТКА ДЛЯ ПЛАНШЕТОВ И НЕБОЛЬШИХ МОНИТОРОВ */
+  
+  @media only screen and (max-width: 1800px) {
+    .ktogdekogda {
+      top: 250px;
+      left: 50px;
+    }
+    .opisanie {
+      top: 250px;
+      right: 50px;
+    }
+  }
+  @media only screen and (max-width: 960px) {
+    .fixed-menu {
+      width: 90%;
+    }
+    li {
+      text-transform: uppercase;
+      font-size: 32px;
+    }
+  }
+  
+  /* ? АДАПТИВНАЯ ВЕРСТКА ДЛЯ СМАРТФОНОВ*/
+  @media only screen and (max-width: 768px) {
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 180px;
+    }
+  
+    li {
+      list-style: none;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      font-size: 150%;
+    }
+  
+    .ikonka1 {
+      width: 50%;
+      position: relative;
+    }
+  
+    main {
+      margin-top: 60px;
+    }
+  
+    .start {
+      padding: 0px;
+      font-size: 34px;
+    }
+  
+    .katarinaIMG {
+      position: fixed;
+      width: 80%;
+      top: 370px;
+      left: 150px;
+      z-index: 1001;
+    }
+  
+    .circle {
+      display: none;
+    }
+  
+    .ktogdekogda {
+      position: fixed;
+      font-size: 10px;
+      top: 420px;
+      left: 20px;
+    }
+
+    .ktogdekogda:hover {
+      z-index: 9999;
+    }
+    
+    .opisanie {
+      position: fixed;
+      top: 300px;
+      left: 20px;
+      width: 80%;
+      max-height: 110px;
+      font-size: 14px;
+    }
+    .opisanie:hover {
+      z-index: 2000;
+    }
+  
+    .katarina-word {
+      font-size: 14px;
+      position: fixed;
+      top: 250px;
+    }
+    .phrase {
+      display: none;
+    }
+  
+    .footer {
+      margin-top: 560px;
+      z-index: 2001;
+      background-color: #3a0f0f;
+    }
+  
+    .YT-VIDEOS {
+      display: block;
+      color: #fff;
+      width: 90vw;
+    }
+  }

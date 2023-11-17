@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Century Gothic"),
+    /* Если не получилось, загрузит woff2 */
+    url("/fonts/centurygothic.ttf") format("ttf");
+  /* Если браузер не поддерживает woff2, загрузит woff */
+  /* url("/fonts/roboto.woff") format("woff"); */
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.none {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: linear-gradient(45deg, #200909, #0e0c0c);
+  background-attachment: fixed;
+  font-family: "Century Gothic", "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* main {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #ebbc80;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.fixed-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 10px;
+  background: linear-gradient(45deg, #080400, #661818);
+
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 80px;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+.ikonka1 {
+  width: 20%;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  margin-top: 100px;
+  width: 1300px;
+  height: auto;
+  background-color: rgb(2, 2, 26);
+  border: #ebbc80 1px solid;
+  border-radius: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.skin-block {
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.image-skin {
+  width: 800px;
+  border: #fff 2px solid;
+}
+
+.h1 {
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+    0 0 0.2em rgb(172, 30, 25);
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+/* ? АДАПТИВНАЯ ВЕРСТКА ДЛЯ ПЛАНШЕТОВ И НЕБОЛЬШИХ МОНИТОРОВ */
+@media only screen and (max-width: 960px) {
+
+  .skin-block {
+    width: 65%;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .image-skin {
+    width: 100%;
+    border: #fff 2px solid;
+  }
+
+  .h1 {
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+      0 0 0.2em rgb(172, 30, 25);
+    font-size: 100%;
+    padding-bottom: 15px;
+  }
+
+  .gallery {
+    width: 80%;
+  }
+}
+
+/* ? АДАПТИВНАЯ ВЕРСТКА ДЛЯ СМАРТФОНОВ*/
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 150%;
+  }
+
+  .ikonka1 {
+    width: 50%;
+    position: relative;
+  }
+
+  main {
+    margin-top: 100px;
+  }
+
+  .skin-block {
+    width: 100%;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .image-skin {
+    width: 100%;
+    border: #fff 2px solid;
+  }
+
+  .h1 {
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+      0 0 0.2em rgb(172, 30, 25);
+    font-size: 100%;
+    padding-bottom: 15px;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+}

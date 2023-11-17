@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="fixed-menu">
+                <img class="ikonka1" src="images/noxus2.png" alt="" />
+                <ul>
+                    <li class="menu-item"><a class="aa" href="index.html">ГЛАВНАЯ</a></li>
+                    <li class="menu-item"><a class="aa" href="skins.html">СКИНЫ</a></li>
+                    <li class="menu-item"><a href="combo.html">КОМБО</a></li>
+                    <li class="menu-item"><a href="test.html">ТЕСТ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="main-content">
+            <div class="Quiz">
+                <h1 class="katarina-test">Проверка знаний про Катарину</h1>
+                <div class="Question-block" id="1">
+                    <p class="question-text">Где родилась Катарина?</p>
+                    <div class="Answers">
+                        <p class="Answer"><input type="radio" onclick="tap(0, 1)" id="true" name="Answer1"
+                                value="true">Ноксус </p>
+                        <p class="Answer"><input type="radio" onclick="tap(0, 2)" id="false" name="Answer1"
+                                value="false">Иония </p>
+                        <p class="Answer"><input type="radio" onclick="tap(0, 3)" id="false" name="Answer1"
+                                value="false">Демасия</p>
+                        <p class="Answer"><input type="radio" onclick="tap(0, 4)" id="false" name="Answer1"
+                                value="false"> Шурима</p>
+                    </div>
+                </div>
+
+                <div class="Question-block" id="2">
+                    <p class="question-text">Какое оружие использует Катарина?</p>
+                    <div class="Answers">
+                        <p class="Answer"><input type="radio" onclick="tap(1, 1)" id="true" name="Answer2" value="true">
+                            Меч </p>
+                        <p class="Answer"><input type="radio" onclick="tap(1, 2)" id="false" name="Answer2"
+                                value="false"> Катана </p>
+                        <p class="Answer"><input type="radio" onclick="tap(1, 3)" id="false" name="Answer2"
+                                value="false">Кинжалы</p>
+                        <p class="Answer"><input type="radio" onclick="tap(1, 4)" id="false" name="Answer2"
+                                value="false"> Сабля </p>
+                    </div>
+                </div>
+
+                <div class="Question-block" id="3">
+                    <p class="question-text">Настоящее (полное) имя?
+                    </p>
+                    <div class="Answers">
+                        <p class="Answer"><input type="radio" onclick="tap(2,1)" id="true" name="Answer3" value="true">
+                            Катарина Де Брюсо </p>
+                        <p class="Answer"><input type="radio" onclick="tap(2,2)" id="false" name="Answer3"
+                                value="false"> Катарина Дю Кото </p>
+                        <p class="Answer"><input type="radio" onclick="tap(2,3)" id="false" name="Answer3"
+                                value="false"> Екатерина </p>
+                        <p class="Answer"><input type="radio" onclick="tap(2,4)" id="false" name="Answer3"
+                                value="false"> Катарина Первая </p>
+                    </div>
+                </div>
+
+                <div class="Question-block" id="1">
+                    <p class="question-text">Сколько у Катарины скинов?</p>
+                    <div class="Answers">
+                        <p class="Answer"><input type="radio" onclick="tap(3, 1)" id="true" name="Answer4"
+                                value="true">16</p>
+                        <p class="Answer"><input type="radio" onclick="tap(3, 2)" id="false" name="Answer4"
+                                value="false">15 </p>
+                        <p class="Answer"><input type="radio" onclick="tap(3, 3)" id="false" name="Answer4"
+                                value="false">14</p>
+                        <p class="Answer"><input type="radio" onclick="tap(3, 4)" id="false" name="Answer4"
+                                value="false"> 13</p>
+                    </div>
+                </div>
+
+                <button onclick="n()" class="resultat-text"> Узнать результат </button>
+                <p class="question-text" id="res"></p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="test.js">
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+@font-face {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Century Gothic"),
+    /* Если не получилось, загрузит woff2 */
+    url("/fonts/centurygothic.ttf") format("ttf");
+  /* Если браузер не поддерживает woff2, загрузит woff */
+  /* url("/fonts/roboto.woff") format("woff"); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.none {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: linear-gradient(45deg, #200909, #0e0c0c);
+  background-attachment: fixed;
+  font-family: "Century Gothic", "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #ebbc80;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.fixed-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 10px;
+  background: linear-gradient(45deg, #080400, #661818);
+
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 80px;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+.ikonka1 {
+  width: 20%;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0px;
+
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+
+  height: 224px;
+  padding: 10px;
+  width: 600px;
+  background-color: rgb(2, 2, 26);
+
+  -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+  display: flex;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+    0 0 0.2em rgb(172, 30, 25);
+  font-size: 40px;
+  margin-top: 20px;
+  padding: 100px;
+}
+
+.skill {
+  width: 75px;
+  border: solid #222222 1px;
+}
+
+.skill-text {
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+    0 0 0.2em rgb(172, 30, 25);
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+.combos {
+  display: flex;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(158, 63, 34),
+    0 0 0.2em rgb(172, 30, 25);
+  font-size: 40px;
+  margin-top: 100px;
+}
+
+.block2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: column;
+  padding: 20px;
+
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+
+  height: 100%;
+  width: 800px;
+  background-color: rgb(2, 2, 26);
+
+  -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+  padding-top: 40px;
+  margin: 0 0.8rem;
+  width: 1px;
+  height: 1px;
+  -webkit-filter: brightness(0%) invert(57%) sepia(20%) saturate(482%) hue-rotate(192deg) brightness(98%) contrast(89%);
+  filter: brightness(0%) invert(57%) sepia(20%) saturate(482%) hue-rotate(192deg) brightness(98%) contrast(89%);
+}
+
+.combo-block {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.description-combo {
+  margin-top: 30px;
+  color: #ebbc80;
+}
+
+.block3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 100px;
+
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+
+  height: 100%;
+  width: 800px;
+  background-color: rgb(2, 2, 26);
+
+  -webkit-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 11px rgba(0, 0, 0, 0.1);
+}
+
+.Q:hover::after {
+  content: "Катарина мечет во врага кинжал, который рикошетом поражает еще несколько целей, после чего падает на землю.";
+  position: absolute;
+  margin-top: -100px;
+  padding: 10px;
+  background-color: rgb(2, 2, 26);
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  width: 250px;
+  height: 105px;
+  padding: 10px;
+  color: #ebbc80;
+}
+
+.W:hover::after {
+  content: "Катарина подбрасывает над собой кинжал, ненадолго увеличивая свою скорость передвижения.";
+  position: absolute;
+  margin-top: -100px;
+  padding: 10px;
+  background-color: rgb(2, 2, 26);
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  width: 250px;
+  height: 90px;
+  padding: 10px;
+  color: #ebbc80;
+}
+
+.E:hover::after {
+  content: "Катарина телепортируется к цели, нанося урон этой цели, если ей окажется враг, или ближайшему врагу.";
+  position: absolute;
+  margin-top: -100px;
+  padding: 10px;
+  background-color: rgb(2, 2, 26);
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  width: 250px;
+  height: 85px;
+  padding: 10px;
+  color: #ebbc80;
+}
+
+.R:hover::after {
+  content: "Катарина становится вихрем клинков и наносит огромный магический урон трем ближайшим вражеским чемпионам.";
+  position: absolute;
+  margin-top: -100px;
+  padding: 10px;
+  background-color: rgb(2, 2, 26);
+  border: 0.2px solid #ebbc80;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+  max-width: 100%;
+  width: 250px;
+  height: 105px;
+  padding: 10px;
+  color: #ebbc80;
+}
+
+/* ? АДАПТИВНАЯ ВЕРСТКА ДЛЯ ПЛАНШЕТОВ И НЕБОЛЬШИХ МОНИТОРОВ */
+@media only screen and (max-width: 960px) {
+  .fixed-menu {
+    width: 90%;
+  }
+
+  li {
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+
+  .block1 {
+    width: 70%;
+  }
+
+  .block2 {
+    width: 80%;
+  }
+
+  .block3 {
+    width: 80%;
+  }
+
+  .skills {
+    margin-top: 90px;
+    font-size: 40px;
+  }
+
+  .E:hover::after { 
+    margin-left: -15%;
+  }
+
+  .R:hover::after { 
+    margin-left: -35%;
+  }
+
+  .skill-text {
+    width: 100%;
+  }
+}
+
+/* ? АДАПТИВНАЯ ВЕРСТКА ДЛЯ СМАРТФОНОВ*/
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+
+  .ikonka1 {
+    width: 50%;
+    position: relative;
+  }
+
+  main {
+    margin-top: 60px;
+  }
+
+  .skill-text {
+    width: 100%;
+  }
+
+  .skills {
+    font-size: 200%;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .combos {
+  font-size: 25px;
+  }
+ 
+  .Q:hover::after {
+    width: 150px;
+    height: 110px;
+    font-size: 13px;
+    z-index: 999;
+  }
+
+  .W:hover::after { 
+    width: 150px;
+    font-size: 13px;
+    margin-left: -25%;
+    height: 98px;
+    z-index: 999;
+  } 
+
+  .E:hover::after {
+    width: 150px; 
+    margin-left: -30%;
+    font-size: 13px;
+    height: 105px;
+    z-index: 999;
+  }
+
+  .R:hover::after { 
+    width: 150px;
+    margin-left: -55%;
+    font-size: 13px;
+    height: 110px;
+    z-index: 999;
+  }
+
+  .skill-text {
+    font-size: 200%;
+  }
+
+  .block1 {
+    width: 70%;
+  }
+
+  .block2 {
+    width: 80%;
+  }
+
+  .block3 {
+    width: 80%;
+  }
+}
