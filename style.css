@@ -208,6 +208,11 @@ main {
     margin-top: 30px;
 }
 
+.music__content-h1 {
+    color: white;
+    font-family: 'drukwide', sans-serif ;
+}
+
 .music__content_blocks {
     display: flex;
     justify-content: space-evenly;
@@ -246,8 +251,6 @@ main {
     box-shadow: 0px 0px 86px -28px rgba(217, 0, 255, 1);
 }
 
-
-
 .music__content_img {
     width: 100%;
 }
@@ -278,12 +281,18 @@ main {
 .clips__content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     height: auto;
     flex-wrap: nowrap;
     width: 48vw;
     max-height: 100%;
-    margin-top: 130px;
+    margin-top: 20px;
+}
+
+.clips__content-h1 {
+    font-family: 'drukwide', sans-serif;
+    color: white;
+    margin-bottom: 120px;
 }
 
 .clips__content_block {
