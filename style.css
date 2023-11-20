@@ -325,6 +325,7 @@ main {
     font-family: 'pragmatica', sans-serif;
     font-size: 0.78125vw;
     transition: .5s;
+    
 }
 
 .music__content_h1:hover {
@@ -361,7 +362,9 @@ main {
 .clips__content-h1 {
     font-family: 'drukwide', sans-serif;
     color: white;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
+    animation-name: up-down;
+    animation-duration: .7s;
 }
 
 .clips__content_block {
