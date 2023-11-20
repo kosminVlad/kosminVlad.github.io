@@ -29,3 +29,19 @@ fetch('clips.json')
         clipsContent.insertAdjacentHTML('beforeend', clip)
         })
     })
+
+fetch('artists.json')
+    .then(response => response.json())
+    .then(artists => {
+        const artistsContent = document.querySelector('.artists__content_block')
+
+        artists.forEach(elem => {
+            const artist = `
+            <div class="artist__content_block"> 
+            <a href="${elem.url}"> <img class="artists__content_block-img" src="${elem.image}" alt=""> </a>
+            <a href="${elem.url}"> <p> ${elem.artist} </p> </a>
+        </div>`
+
+        artistsContent.insertAdjacentHTML('beforeend', artist)
+        })
+    })

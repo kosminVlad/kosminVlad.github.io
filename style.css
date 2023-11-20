@@ -97,7 +97,8 @@ padding: 0 0 30px 0 ;
 
 .menu__urls {
     display: flex;
-    justify-content: space-between;
+    gap: 3vw;
+    align-items: flex-start;
 }
 
 
@@ -137,13 +138,11 @@ padding: 0 0 30px 0 ;
     opacity: .7;
 }
 
-
-
 /* MAIN */
 
 main {
     width: 100vw ;
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -163,6 +162,17 @@ main {
     flex-wrap: wrap;
     margin-top: 50px ;
     gap: 50px;
+    animation-name: opacity;
+    animation-duration: 1s;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .projects__content_block {
@@ -183,34 +193,112 @@ main {
     width: 100%;
 }
 
-.nothing__content {
+.artists__content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     height: 100%;
-    flex-wrap: wrap;
-    gap: 50px;
+    width: 100%;
+    overflow: hidden;
+    flex-direction:row;
+    animation-name: opacity;
+    animation-duration: 1s;
 }
 
-.nothing__content h1 {
-    font-family: sans-serif;
+.artists__content_content {
+    display: flex;
+    width: 100%; 
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 5vh;
+}
+
+.artists__content_content p {
     color: white;
-    font-weight: bold;
+    font-family: 'pragmatica', sans-serif;
+    font-size: .8vw ;
+    font-weight: 600;
+}
+
+.artists__content_content h1 {
+    color: white;
+    font-family: 'drukwide';
+    animation-name: up-down;
+    font-size: vw;
+    animation-duration: .7s;
+}
+
+.artists__content_artist {
+    animation-name: heronwater;
+    animation-duration: .6s;
+}
+
+.artists__content_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+.artist__content_block {
+    width: 13vw;
+    animation-name: up-down;
+    animation-duration: .7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 150px;
+}
+
+.artist__content_block:hover {
+    background-color: rgb(5, 5, 5);
+}
+
+
+.artists__content_block-img {
+    width: 10vw;
+    border-radius: 360px;
+}
+
+
+@keyframes heronwater {
+    from {
+        transform: translateX(40vw);
+    }
+
+    to {
+        transform: 0;
+    }
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .music__content {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     height: 100%;
     flex-wrap: wrap;
     margin-top: 30px;
+    animation-name: opacity;
+    animation-duration: 1s;
 }
 
 .music__content-h1 {
     color: white;
     font-family: 'drukwide', sans-serif ;
+    animation-name: up-down;
+    animation-duration: .7s;
 }
 
 .music__content_blocks {
@@ -226,29 +314,6 @@ main {
     width: 17.5vw;
     height: 17vw;
     margin: 3%;
-}
-
-.best_album_h1 {
-    font-size: 5vw;
-    color: #d87093;
-}
-
-.last_best__album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    flex-direction: column;
-    color: white;
-}
-
-.best__album {
-    width: 17.5vw;
-    height: 17vw;
-
-    -webkit-box-shadow: 0px 0px 86px -28px rgba(217, 0, 255, 1);
-    -moz-box-shadow: 0px 0px 86px -28px rgba(217, 0, 255, 1);
-    box-shadow: 0px 0px 86px -28px rgba(217, 0, 255, 1);
 }
 
 .music__content_img {
@@ -287,6 +352,10 @@ main {
     width: 48vw;
     max-height: 100%;
     margin-top: 20px;
+    opacity: 1;
+    transition: .5s;
+    animation-name: opacity;
+    animation-duration: 1s;
 }
 
 .clips__content-h1 {
@@ -312,4 +381,8 @@ main {
 
 .none {
     display: none;
+}
+
+.transition {
+    transition: .5s;
 }
