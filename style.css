@@ -184,9 +184,8 @@ main {
     font-family: 'pragmatica', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    gap: 15px;
-    font-size: 18px;
-    
+    gap: 1vw;
+    font-size: 1vw;
 }
 
 .projects__content_block_img {
@@ -197,7 +196,7 @@ main {
     display: flex;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     flex-direction:row;
     animation-name: opacity;
     animation-duration: 1s;
@@ -218,6 +217,14 @@ main {
     font-family: 'pragmatica', sans-serif;
     font-size: .8vw ;
     font-weight: 600;
+}
+
+.artists__content-h1 {
+    color: white;
+    font-family: 'drukwide', sans-serif ;
+    animation-name: up-down;
+    animation-duration: .7s;
+    font-size: 2vw;
 }
 
 .artists__content_content h1 {
@@ -306,6 +313,7 @@ main {
     font-family: 'drukwide', sans-serif ;
     animation-name: up-down;
     animation-duration: .7s;
+    font-size: 2vw;
 }
 
 .music__content_blocks {
@@ -369,9 +377,10 @@ main {
 .clips__content-h1 {
     font-family: 'drukwide', sans-serif;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 3vw;
     animation-name: up-down;
     animation-duration: .7s;
+    font-size: 2vw ;
 }
 
 .clips__content_block {
@@ -395,4 +404,43 @@ main {
 
 .transition {
     transition: .5s;
+}
+
+@media only screen and (max-width: 1065px) {
+    .artists__content_img {
+        display: none;
+    }
+
+    .artists__content_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .artists__content_block p {
+        font-size: 1.5vw;
+    }
+
+    .artists__content_block-img {
+        width: 30vw;
+    }
+    .projects__content_block {
+        font-size: 1.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .music__content_block {
+        width: 25vw;
+        margin: 0 0 15vw 0;
+    }
+
+    .music__content_h1 {
+        font-size: 1.3vw;
+    }
+
+    .music__content_p {
+        font-size: 1.1vw;
+    }
 }
