@@ -145,6 +145,27 @@
         "author": "LILDRUGHILL",
         "title": "All Babies Fly",
         "url": "https://music.yandex.ru/album/13619041"
+    },
+    {
+        "id": 22,
+        "image": "music/RAW.png",
+        "author": "CMH",
+        "title": "RAW",
+        "url": "https://music.yandex.ru/album/17437704"
+    },
+    {
+        "id": 23,
+        "image": "music/Creepshow.png",
+        "author": "Velial Squad",
+        "title": "CREEPSHOW",
+        "url": "https://music.yandex.ru/album/17437704"
+    },
+    {
+        "id": 24,
+        "image": "music/2DWRLDPREQUEL.png",
+        "author": "midix",
+        "title": "2DWRLD PREQUEL",
+        "url": "https://music.yandex.ru/album/17437704"
     }
 
 ]

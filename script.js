@@ -14,8 +14,10 @@ document.getElementById("discord").addEventListener("click", function () {
     alert("Текст скопирован в буфер обмена!");
 });
     function logoClick(){
+        const menuContent = document.querySelector(".menu_content")
+
         document.querySelector("#logo").addEventListener('click', () => {
-            
+            menuContent.style.display = "flex"
         }) 
     }
 

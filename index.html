@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobilestyles.css">
     <title>KOSMIN</title>
 </head>
 
 <body>
     <menu>
+        <div class="logo" onclick="logoClick()">
+            <h1 id="logo">KOSMIN</h1>
+        </div>
         <div class="menu-content">
-            <div class="logo" onclick="logoClick()">
-                <a href="index.html"><h1 id="logo">KOSMIN</h1></a> 
-            </div>
             <div class="list">
                 <ul class="menu__list">
                     <li class="menu__list-li" onclick="projectsOn()"> <a href="#main-content" class="menu__list-url">
@@ -48,6 +49,7 @@
             </div>
         </div>
     </menu>
+    
     <main>
         <div class="main-content" id="main-content">
             <div class="projects__content none" id="projects">
