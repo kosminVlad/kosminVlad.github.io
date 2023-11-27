@@ -3,6 +3,9 @@ fetch('data.json')
     .then(albums => {
         const musicContent = document.querySelector('.music__content_blocks')
 
+        console.log(albums);
+        albums.reverse();
+
         albums.forEach(elem => {
             const album = `                
             <div class="music__content_block">
