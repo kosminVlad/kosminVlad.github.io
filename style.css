@@ -324,6 +324,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: row;
     height: 100%;
     flex-wrap: wrap;
     margin-top: 30px;
@@ -333,6 +334,13 @@ main {
     width: 17.5vw;
     height: 17vw;
     margin: 3%;
+    transition: .5s;
+}
+
+.music__content_block:hover {
+    transform: scale(1.07);
+    transition: .5s;
+    z-index: 99;
 }
 
 .music__content_img {

@@ -148,24 +148,45 @@
     },
     {
         "id": 22,
-        "image": "music/RAW.png",
-        "author": "CMH",
-        "title": "RAW",
-        "url": "https://music.yandex.ru/album/17437704"
+        "image": "music/ISKRENNEYA.jpeg",
+        "author": "THRILL PILL",
+        "title": "ИСКРЕННЕ Я",
+        "url": "https://music.yandex.ru/album/25740246"
     },
     {
         "id": 23,
-        "image": "music/Creepshow.png",
-        "author": "Velial Squad",
-        "title": "CREEPSHOW",
-        "url": "https://music.yandex.ru/album/17437704"
+        "image": "music/CHELSEA3.jpeg",
+        "author": "THRILL PILL",
+        "title": "CHELSEA 3",
+        "url": "https://music.yandex.ru/album/23930843"
     },
     {
         "id": 24,
+        "image": "music/SHIK2.jpeg",
+        "author": "Кишлак",
+        "title": "СХИК2",
+        "url": "https://music.yandex.ru/album/28122625"
+    },
+    {
+        "id": 25,
+        "image": "music/RAW.png",
+        "author": "CMH",
+        "title": "RAW",
+        "url": "https://music.yandex.ru/album/28304902"
+    },
+    {
+        "id": 26,
+        "image": "music/Creepshow.png",
+        "author": "Velial Squad",
+        "title": "CREEPSHOW",
+        "url": "https://music.yandex.ru/album/28241508"
+    },
+    {
+        "id": 27,
         "image": "music/2DWRLDPREQUEL.png",
-        "author": "midix",
+        "author": "Midix",
         "title": "2DWRLD PREQUEL",
-        "url": "https://music.yandex.ru/album/17437704"
+        "url": "https://music.yandex.ru/album/28241705"
     }
 
 ]
