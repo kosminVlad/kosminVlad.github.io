@@ -12,13 +12,20 @@ document.getElementById("discord").addEventListener("click", function () {
     document.body.removeChild(textArea);
 
     alert("Текст скопирован в буфер обмена!");
-});
-    function logoClick(){
-        const menuContent = document.querySelector(".menu_content")
+});    
+    function logoBig() {
+        let projects = document.querySelector('.projects__content') 
+        let artists  = document.querySelector('.artists__content')
+        let music = document.querySelector('.music__content')
+        let clips = document.querySelector('.clips__content')
+        let logoClass = document.querySelector('.logo')
+        let logoId = document.querySelector('#logo')
 
-        document.querySelector("#logo").addEventListener('click', () => {
-            menuContent.style.display = "flex"
-        }) 
+        logoId.style.fontSize = "14vw"
+        projects.classList.add('none')
+        artists.classList.add('none')
+        music.classList.add('none')
+        clips.classList.add('none')
     }
 
     function projectsOn() {
