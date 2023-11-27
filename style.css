@@ -154,7 +154,6 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 0 50px 0;
 }
 
 .projects__content {
@@ -310,6 +309,7 @@ main {
     margin-top: 30px;
     animation-name: opacity;
     animation-duration: 1s;
+    padding: 0 0 50px 0;
 }
 
 .music__content-h1 {
