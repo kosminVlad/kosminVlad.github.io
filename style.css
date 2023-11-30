@@ -158,6 +158,8 @@ main {
     height: 100%;
 }
 
+
+
 .projects__content {
     display: flex;
     justify-content: space-around;
@@ -230,6 +232,7 @@ main {
     animation-name: up-down;
     animation-duration: .7s;
     font-size: 2vw;
+    padding: 1.3vw;
 }
 
 .artists__content_content h1 {
