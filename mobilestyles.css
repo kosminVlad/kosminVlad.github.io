@@ -1,14 +1,60 @@
 @media only screen and (max-width: 1024px) {
-    menu {
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-content {
         display: none;
     }
-    .artists__content-h1 {
-        font-size: 3vw;
+
+    .list {
+        margin: 0 0 0 0;
     }
-    .artist__content_block {
-        width: 5vw;
+
+    .menu__list {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 1vw 0;
+        margin: 0 0 0 2vw ;
+        justify-content: flex-end;
     }
-    .music__content_blocks {
-        gap: 1%;
+
+    .menu__list-li {
+        font-size: 10vw;
+        line-height: 1;
+    }
+
+    .menu__urls {
+        width: 100vw;
+        display: flex;
+        gap: 27.3vw;
+        justify-content: flex-start;
+    }
+
+    .menu__urls-img {
+        width: 10vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu__list-li {
+        font-size: 14vw;
+    }
+
+
+}
+
+@media only screen and (max-width: 425px) {
+    .menu__list-li {
+        font-size: 14vw;
+        line-height: 1.5;
+    }
+    .menu__urls {
+        gap: 26vw;
     }
 }
