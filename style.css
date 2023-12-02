@@ -63,6 +63,7 @@ menu {
 .logo {
     position: fixed;
     z-index: 66;
+    padding: 2vh 0 0 30px;
 }
 
 .logo h1 {
