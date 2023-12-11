@@ -46,11 +46,5 @@
         "url": "https://music.yandex.ru/artist/4113580",
         "artist": "Playboi Carti",
         "image": "artists/playboicarti.jpeg"   
-    },
-    {
-        "id": 9,
-        "url": "https://music.yandex.ru/artist/6477910",
-        "artist": "Ken Carson",
-        "image": "artists/KenCarson.png"   
     }
 ]

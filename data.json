@@ -194,6 +194,12 @@
         "author": "Toxi$",
         "title": "HOTSHOT",
         "url": "https://music.yandex.ru/album/28385028"
+    },
+    {
+        "id": 29,
+        "image": "music/ORPHEUS.jpeg",
+        "author": "9mice",
+        "title": "ORPHEUS",
+        "url": "https://music.yandex.ru/album/28485493"
     }
-
 ]
