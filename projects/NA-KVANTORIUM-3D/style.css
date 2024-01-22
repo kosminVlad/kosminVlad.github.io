@@ -216,7 +216,7 @@ main {
     align-items: center;
     border-radius: 350px;
     cursor: pointer;
-    font-family: "Open Sans", sans-serif;;
+    font-family: "Open Sans", sans-serif;
 }
 
 .requests_block-description {
@@ -228,19 +228,27 @@ main {
 }
 
 footer {
-   position: fixed;
    width: 90%;
    display: flex;
-   top: 90vh;
+   border-top: .1px solid black;
+   font-family: "KRASNODAR";
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 100px;
+    align-items: center;
 }
 
 .footer-text {
     font-size: 1.1vw;
     font-family: 'KRASNODAR';
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap:2px;
 }
