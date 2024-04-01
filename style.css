@@ -162,7 +162,7 @@ main {
 .projects__content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     flex-wrap: wrap;
     margin-top: 50px ;
@@ -184,7 +184,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 50vw;
-    height: 30vw;
+    height: fi;
     color: white;
     font-family: 'pragmatica', sans-serif;
     font-weight: bold;
@@ -205,6 +205,7 @@ main {
     flex-direction:row;
     animation-name: opacity;
     animation-duration: 1s;
+    
     
 }
 
@@ -254,6 +255,7 @@ main {
     flex-wrap: wrap;
     gap: 3vw;
 }
+
 .artist__content_block {
     width: 13vw;
     animation-name: up-down;
@@ -279,6 +281,9 @@ main {
     box-shadow: 0px 0px 8px 2px rgba(14, 15, 15, 0.2);
 }
 
+.top {
+    margin-top: -46px;
+}
 
 @keyframes heronwater {
     from {
@@ -304,9 +309,12 @@ main {
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
+    
     height: 100%;
+    
     flex-wrap: wrap;
-    margin-top: 30px;
+    
+    margin-top: 60px;
     animation-name: opacity;
     animation-duration: 1s;
     padding: 0 0 50px 0;
@@ -352,7 +360,6 @@ main {
     font-family: 'pragmatica', sans-serif;
     font-size: 0.78125vw;
     transition: .5s;
-    
 }
 
 .music__content_h1:hover {
@@ -373,17 +380,26 @@ main {
 
 .clips__content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
-    height: auto;
-    flex-wrap: nowrap;
-    width: 48vw;
-    max-height: 100%;
-    margin-top: 20px;
-    opacity: 1;
-    transition: .5s;
+    
+    height: 100%;
+    
+    flex-wrap: wrap;
+    margin-top: 60px;
     animation-name: opacity;
     animation-duration: 1s;
+}
+
+.clips__content_iframe {
+    width: 48vw;
+    height: 26vh;
+}
+
+.clips__content_blocks {
+    display: flex;
+    flex-direction: column;
 }
 
 .clips__content-h1 {
@@ -454,5 +470,141 @@ main {
 
     .music__content_p {
         font-size: 1.1vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .logo {
+
+    }
+
+    menu {
+        width: 100%;
+
+    }
+
+    .menu-content {
+        width: 85%;
+    }
+
+    .menu__list-li {
+        line-height: 1.52;
+    }
+
+    .menu__urls {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu__urls-img {
+        width: 50px;
+    }
+
+    .menu__list-url {
+        font-size: 52px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .content-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 ;
+    }
+
+    .projects__content {
+        gap: 30px;
+    }
+
+    .projects__content_block {
+        width: 370px;
+        font-size: 15PX;
+    }
+
+    .artists__content {
+        width: 100%;
+    }
+
+    .content-header__logo {
+        color: #d87093;
+        font-family: 'drukwide', sans-serif;
+        font-size: 28px;
+    }
+
+    .artists__content-h1 {
+        display: flex;
+        font-size: 20px;
+        width: 179px;
+        padding: 20px 0 0 0;
+    }
+
+    .artist__content_block {
+        width: 100px;
+    }
+
+    .artists__content_block-img {
+        width: 280px;
+    }
+
+    .artists__content_content p {
+        font-size: 15px;
+    }
+
+    .music__content-h1 {
+        font-size: 20px;
+    }
+
+    .music__content_block {
+        width: 170px;
+        height: fit-content;
+        margin: 0 0 10px 0;
+    }
+
+    .music__content_h1 {
+        font-size: 10px;
+    }
+
+    .music__content_p {
+        font-size: 9px;
+    }
+
+    .clips__content_blocks {
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .clips__content_iframe {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .clips__content_block {
+        margin: 0 0 0 0;
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projects__content_block {
+        width: 330px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .projects__content_block {
+        width: 290px;
+    }
+
+    .menu__list-url {
+        font-size: 45px;
+    }
+
+    .music__content_block {
+        width: 145px;
     }
 }

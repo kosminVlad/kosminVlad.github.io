@@ -33,12 +33,25 @@ document.getElementById("discord").addEventListener("click", function () {
         let artists  = document.querySelector('.artists__content')
         let music = document.querySelector('.music__content')
         let clips = document.querySelector('.clips__content')
-        let logo = document.querySelector('#logo')
-    logo.style.fontSize = "2vw"
-    projects.classList.remove('none')
-    artists.classList.add('none')
-    music.classList.add('none')
-    clips.classList.add('none')
+        let logo = document.getElementById('logo')
+        let l = document.querySelector('#logo')
+        let menu = document.querySelector('.menu')
+        let menuContent = document.querySelector('.menu__content')
+
+        projects.classList.remove('none')
+        artists.classList.add('none')
+        music.classList.add('none')
+        clips.classList.add('none')
+        
+        if (document.documentElement.clientWidth < 426) { 
+            logo.classList.add('none') 
+        } else {
+            logo.style.fontSize = "2vw"}
+
+        if (document.documentElement.clientWidth < 426) {
+            menu.classList.add('none')
+            menuContent.classList.add('none')
+        }
 }
 
     function nothingOn() {
@@ -47,11 +60,23 @@ document.getElementById("discord").addEventListener("click", function () {
         let music = document.querySelector('.music__content')
         let clips = document.querySelector('.clips__content')
         let logo = document.querySelector('#logo')
+        let menu = document.querySelector('.menu')
+        let menuContent = document.querySelector('.menu__content')
         logo.style.fontSize = "2vw"
         projects.classList.add('none')
         artists.classList.remove('none')
         music.classList.add('none')
         clips.classList.add('none')
+
+        if (document.documentElement.clientWidth < 426) { 
+            logo.classList.add('none') 
+        } else {
+            logo.style.fontSize = "2vw"}
+
+        if (document.documentElement.clientWidth < 426) {
+            menu.classList.add('none')
+            menuContent.classList.add('none')
+        }
     }
 
     function musicOn() {
@@ -60,11 +85,23 @@ document.getElementById("discord").addEventListener("click", function () {
         let music = document.querySelector('.music__content')
         let clips = document.querySelector('.clips__content')
         let logo = document.querySelector('#logo')
+        let menu = document.querySelector('.menu')
+        let menuContent = document.querySelector('.menu__content')
         logo.style.fontSize = "2vw"
         projects.classList.add('none')
         artists.classList.add('none')
         music.classList.remove('none')
         clips.classList.add('none')
+
+        if (document.documentElement.clientWidth < 426) { 
+            logo.classList.add('none') 
+        } else {
+            logo.style.fontSize = "2vw"}
+
+        if (document.documentElement.clientWidth < 426) {
+            menu.classList.add('none')
+            menuContent.classList.add('none')
+        }
     }
 
     function clipsOn() {
@@ -73,9 +110,41 @@ document.getElementById("discord").addEventListener("click", function () {
         let music = document.querySelector('.music__content')
         let clips = document.querySelector('.clips__content')
         let logo = document.querySelector('#logo')
+        let menu = document.querySelector('.menu')
+        let menuContent = document.querySelector('.menu__content')
         logo.style.fontSize = "2vw"
         projects.classList.add('none')
         artists.classList.add('none')
         music.classList.add('none')
         clips.classList.remove('none')
+
+        if (document.documentElement.clientWidth < 426) { 
+            logo.classList.add('none') 
+        } else {
+            logo.style.fontSize = "2vw"}
+
+        if (document.documentElement.clientWidth < 426) {
+            menu.classList.add('none')
+            menuContent.classList.add('none')
+        }
+    }
+
+    function menuOn() {
+        let projects = document.querySelector('.projects__content') 
+        let artists = document.querySelector('.artists__content')
+        let music = document.querySelector('.music__content')
+        let clips = document.querySelector('.clips__content')
+        let logo = document.querySelector('#logo')
+        let menu = document.querySelector('.menu')
+        let menuContent = document.querySelector('.menu__content')
+        projects.classList.add('none')
+        artists.classList.add('none')
+        music.classList.add('none')
+        clips.classList.add('none')
+        logo.classList.remove('none')
+        logo.style.fontSize = "14vw"
+        menu.classList.remove('none')
+        menuContent.classList.remove('none')
+
+
     }

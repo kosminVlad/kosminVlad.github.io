@@ -20,12 +20,12 @@ fetch('data.json')
 fetch('clips.json')
     .then(response => response.json())
     .then(clips => {
-        const clipsContent = document.querySelector('.clips__content')
+        const clipsContent = document.querySelector('.clips__content_blocks')
     
         clips.forEach(elem => {
             const clip = `                
             <div class="clips__content_block">
-            <iframe style="width: 48vw; height: 26vw;" src="${elem.url}" referrerpolicy="no-referrer-when-downgrade" title="YouTube videosads player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="clips__content_iframe"  src="${elem.url}" referrerpolicy="no-referrer-when-downgrade" title="YouTube videosads player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p class="clips__content_p">${elem.author} - ${elem.title}</p>
         </div>`
 
