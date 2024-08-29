@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "url": "https://music.yandex.ru/artist/16509384",
-        "artist": "Kai Angel",
-        "image": "artists/kaiAngel.jpeg"   
+        "url": "https://music.yandex.ru/artist/10504257",
+        "artist": "2hollis",
+        "image": "artists/2hollis.jpg"   
     },
     {
         "id": 2,
-        "url": "https://music.yandex.ru/artist/13739916",
-        "artist": "9mice",
-        "image": "artists/9mice.jpg"   
+        "url": "https://music.yandex.ru/artist/6527372",
+        "artist": "YEAT",
+        "image": "artists/yeat.jpg"   
     },
     {
         "id": 3,
