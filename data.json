@@ -21,13 +21,6 @@
         "url": "https://music.yandex.ru/album/22867411"
     },
     {
-        "id": 4,
-        "image": "music/ASPHALT.jpeg",
-        "author": "9mice",
-        "title": "ASPHALT",
-        "url": "https://music.yandex.ru/album/25926224"
-    },
-    {
         "id": 5,
         "image": "music/HEAVYMETAL.jpeg",
         "author": "Kai Angel & 9mice",
@@ -55,13 +48,6 @@
         "title": "ANDERFUL ELF",
         "url": "https://music.yandex.ru/album/28003812"
     },    
-    {
-        "id": 9,
-        "image": "music/sayonarabol.jpeg",
-        "author": "Элджей",
-        "title": "Sayonara bоль",
-        "url": "https://music.yandex.ru/album/25381169"
-    },
     {
         "id": 10,
         "image": "music/MILLIONDOLLARDEPRESSION.jpeg",
@@ -187,12 +173,5 @@
         "author": "Midix",
         "title": "2DWRLD PREQUEL",
         "url": "https://music.yandex.ru/album/28241705"
-    },
-    {
-        "id": 28,
-        "image": "music/ORPHEUS.jpeg",
-        "author": "9mice",
-        "title": "ORPHEUS",
-        "url": "https://music.yandex.ru/album/28485493"
     }
 ]

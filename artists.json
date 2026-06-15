@@ -30,19 +30,7 @@
         "image": "artists/THRILLPILL.jpeg"   
     },
     {
-        "id": 6,
-        "url": "https://music.yandex.ru/artist/7883696",
-        "artist": "Heronwater",
-        "image": "artists/heronwater.jpg"   
-    },
-    {
-        "id": 7,
-        "url": "https://music.yandex.ru/artist/4865954",
-        "artist": "GONE.Fludd",
-        "image": "artists/gonefludd.jpg"   
-    },
-    {
-        "id": 8,
+        "id": 65,
         "url": "https://music.yandex.ru/artist/4113580",
         "artist": "Playboi Carti",
         "image": "artists/playboicarti.jpeg"   

@@ -5,47 +5,34 @@
       "author": "kai angel",
       "title": "prada party"   
     },
-    {
-        "id": 2,
-        "url": "https://www.youtube.com/embed/yxc37RhrmxY?si=dk3ttCFITV3ndTTo",
-        "author": "9mice",
-        "title": "RIOT MUZIK"   
-      },
       {
-        "id": 3,
+        "id": 2,
         "url": "https://www.youtube.com/embed/28rboCjfW_E?si=kreC9kMDKole5iQW",
         "author": "kai angel & 9mice",
         "title": "lipstick"   
       },
       {
-        "id": 4,
+        "id": 3,
         "url": "https://www.youtube.com/embed/3rkJ3L5Ce80?si=fMlAE9vV6qhwuNor",
         "author": "lil peep",
         "title": "benz truck"
       },
       {
-        "id": 5,
+        "id": 4,
         "url": "https://www.youtube.com/embed/i0G8Zhb139k?si=e6Ym5yGqvWzBlvrG",
         "author": "thrill pill",
         "title": "пластик"   
       },
       {
-        "id": 6,
+        "id": 5,
         "url": "https://www.youtube.com/embed/KnumAWWWgUE?si=WSaTIuBnu1iq7i8e",
         "author": "playboi carti",
         "title": "sky"   
       },
       {
-        "id": 7,
+        "id": 6,
         "url": "https://www.youtube.com/embed/Q7N99EzNQrw?si=EpbSOD6FA9CehSSj",
         "author": "Rich Amiri",
         "title": "One Call"   
-      },
-      {
-        "id": 8,
-        "url": "https://www.youtube.com/embed/p7C3T7TelBs?si=2cfyxj5dQ8_og0jl",
-        "author": "OG Buda",
-        "title": "Порш"   
       }
-    
 ]
